@@ -12,7 +12,7 @@ import javax.annotation.PostConstruct;
 @Component
 public class DecoupledLogicSetup {
 
-    // == fields ==
+    // == fields  ==
     private final SpringResourceTemplateResolver templateResolver;
 
     // == constructors ==
