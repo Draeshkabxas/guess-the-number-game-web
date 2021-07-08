@@ -1,0 +1,19 @@
+<thlogic>
+    <attr  sel="#HeadId"
+           th:replace="~{fragments/Head :: headFragment}"/>
+    <!--/*@thymesVar id="resultMessage" type="String"*/-->
+    <attr sel="#result-message"
+          th:text="${resultMessage}"/>
+    <attr sel="#playAgainId"
+          th:text="#{game.play.again}"
+          th:href="restart"/>
+    <attr sel="#game-welcome"
+          th:text="#{game.welcome}"/>
+    <attr sel="#game-over"
+          th:text="#{game.over}"/>
+    <attr sel="#home-url"
+          th:href ="home"
+          th:text="#{game.home}"/>
+    <attr sel="#footerId"
+            th:replace="~{fragments/footer :: footerFragment}"/>
+</thlogic>

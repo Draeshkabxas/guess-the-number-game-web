@@ -1,0 +1,23 @@
+<thlogic>
+    <attr  sel="#headId"
+            th:replace="~{fragments/Head :: headFragment}"/>
+    <!--/*@thymesVar id="mainMessage" type="mainMessage"*/-->
+    <attr sel="#main-message"
+          th:text="${mainMessage}"/>
+    <attr sel="#game-title"
+          th:text="#{game.title}"/>
+    <attr sel="#enter-guess"
+          th:text="#{game.enter.guess}"/>
+    <attr sel="#submit"
+          th:value="#{game.submit}"/>
+
+
+    <!--/*@thymesVar id="resultMessage" type="resultMessage"*/-->
+    <attr sel="#result-message"
+          th:text="${resultMessage}"/>
+    <attr sel="#game-form"
+          th:action="play"
+          method="post"/>
+    <attr sel="#footer"
+            th:replace="~{fragments/footer :: footerFragment}"/>
+</thlogic>
